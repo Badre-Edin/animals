@@ -1,0 +1,103 @@
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: .2s linear;
+  box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+html{
+font-size: 80%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20rem;
+}
+.header{
+    background: #0da82e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:4rem 5%;
+    z-index: 1000;
+    position: fixed;
+    top:0; left:0; right:0; 
+       
+}
+.logo{
+  font-size: 2.5rem;
+  color: gold;
+  font-weight: bolder;
+}
+i {
+  color: rgb(248, 105, 3);
+  cursor: pointer;
+}
+
+.navbar a{
+    margin:0 1rem;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.932);
+  }
+  a:hover{
+    color: gold;
+  }
+  #login-btn{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color:black;
+    cursor: pointer;  
+  }
+  #login-btn:hover{
+    color: gold;
+  }
+  .login-form{
+    position: absolute;
+    top:120%; right:2rem;
+    width:35rem;
+    border-radius: 1rem;
+    background: rgb(233, 232, 232);
+    box-shadow:transparent;
+    padding:1rem;
+    display: none;
+  }
+  h3{
+    color:black;
+    font-size: 2rem;
+    padding-bottom: .2rem;
+  }
+  .box{
+    width:100%;
+    padding: 0.5em;
+    font-size: 1rem;
+    color:black;
+    text-transform: none;
+    margin: 0.5em;
+  }
+  .btn{
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .8rem 2.8rem;
+      border-radius: 4rem;
+      cursor: pointer;
+      color: black;
+      font-size: 1rem;
+      overflow: hidden;
+      position: relative;
+      z-index: 0;
+  }
+  .video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media (min-aspect-ratio: 16/9) {
+    .video {
+      height: 300%;
+      top: -100%;
+      /* Ou bien height: 200%; top: -50%; */
+      /* Ou bien height: 400%; top: -150%; */
+    }
+  }
+  
